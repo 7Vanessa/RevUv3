@@ -1,13 +1,16 @@
 import React from 'react';
-import {StyleSheet, View, Text} from "react-native";
+import {StyleSheet, View, Text, Image, ImageBackground} from "react-native";
 import {auth} from "../firebase";
 
 export default function ProfilPicture() {
     return(
         <View style={styles.container}>
             <Text style={styles.info}>User Informations</Text>
-            <Text style={styles.mail}>Mail:</Text>
-            <Text style={styles.mail_info}>{auth.currentUser?.email}</Text>
+            <Image source={{uri: auth.currentUser?.photoURL}}></Image>
+            <Text style={styles.general}>Pseudo:</Text>
+            <Text style={styles.general_info}>{auth.currentUser?.displayName}</Text>
+            <Text style={styles.general}>Mail:</Text>
+            <Text style={styles.general_info}>{auth.currentUser?.email}</Text>
         </View>
     )
 }
@@ -25,13 +28,13 @@ const styles = StyleSheet.create({
         fontWeight: 'bold'
     },
 
-    mail: {
+    general: {
         fontSize: 20,
         fontWeight: 'bold',
         marginBottom: 5
     },
 
-    mail_info: {
+    general_info: {
         fontSize: 18
     }
 })

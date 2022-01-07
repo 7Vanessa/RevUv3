@@ -57,12 +57,12 @@ function RootNavigator() {
   return (
     <Stack.Navigator>
 
-        <Stack.Screen name="Login" component={LoginScreen} options={{ title: "RevU", headerTitleAlign: "center", headerTitleStyle: {
+        <Stack.Screen name="Login" component={LoginScreen} options={{ title: "Rev'U", headerTitleAlign: "center", headerTitleStyle: {
                 fontWeight: 'bold',
                 fontSize: 25
             }, }} />
 
-        <Stack.Screen name="Register" component={RegisterScreen} options={{ title: "RevU", headerTitleAlign: "center", headerTitleStyle: {
+        <Stack.Screen name="Register" component={RegisterScreen} options={{ title: "Rev'U", headerTitleAlign: "center", headerTitleStyle: {
                 fontWeight: 'bold',
                 fontSize: 25
             }, }} />
