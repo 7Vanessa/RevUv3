@@ -6,21 +6,6 @@ import {auth, db} from "../firebase";
 export default function BiologyGroupScreen() {
     const [messages, setMessages] = useState([])
 
-    /*useEffect(() => {
-        setMessages([
-            {
-                _id: 1,
-                text: 'Hello hi',
-                createdAt: new Date(),
-                user: {
-                    _id: 2,
-                    name: 'React Native',
-                    avatar: "https://zupimages.net/up/22/01/nu7y.jpeg",
-                },
-            },
-        ])
-    }, [])*/
-
     useLayoutEffect(() => {
         const unsubscribe = db.collection('bio').orderBy('createdAt', 'desc').onSnapshot
         (snapshot => setMessages(

@@ -35,6 +35,7 @@ const styles = StyleSheet.create({
     },
 
     general_info: {
-        fontSize: 18
+        fontSize: 18,
+        marginBottom: 15
     }
 })
