@@ -1,0 +1,1 @@
+{"ast":null,"code":"export default styles;","map":{"version":3,"sources":["C:/Users/vmoha/Documents/EFREI/Semestre 5/Projet Transverse/Rev-U/RevU/components/QuestionCard/styles.tsx"],"names":["styles"],"mappings":"AAIA,eAAeA,MAAf","sourcesContent":["import { StyleSheet } from \"react-native\";\r\n\r\n\r\n\r\nexport default styles;"]},"metadata":{},"sourceType":"module"}
