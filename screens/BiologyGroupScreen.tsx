@@ -27,7 +27,7 @@ export default function BiologyGroupScreen() {
             snapshot.docs.map(doc => ({
                 _id: doc.data()._id,
                 createdAt: doc.data().createdAt.toDate(),
-                text: doc.data.text,
+                text: doc.data().text,
                 user: doc.data().user,
             }))
         ))
