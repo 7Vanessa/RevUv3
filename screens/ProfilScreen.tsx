@@ -3,10 +3,10 @@ import {StyleSheet, View, Text, Image, ImageBackground} from "react-native";
 import {auth} from "../firebase";
 
 export default function ProfilPicture() {
+
     return(
         <View style={styles.container}>
             <Text style={styles.info}>User Informations</Text>
-            <Image source={{uri: auth.currentUser?.photoURL}}></Image>
             <Text style={styles.general}>Pseudo:</Text>
             <Text style={styles.general_info}>{auth.currentUser?.displayName}</Text>
             <Text style={styles.general}>Mail:</Text>
